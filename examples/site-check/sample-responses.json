@@ -1,0 +1,70 @@
+{
+  "site": {
+    "findings": [
+      {
+        "page_url": "http://localhost:4173/access.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "電話番号が「03-1234-5687」。トップページの「03-1234-5678」と末尾2桁が逆になっている",
+        "severity": "高",
+        "reason": "同じ店舗の電話番号がページによって異なり、どちらかが誤りの可能性が高い",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/access.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "営業時間が「10:00〜18:00」。トップページの「9:00〜18:00」と開店時刻が違う",
+        "severity": "高",
+        "reason": "営業時間の開始時刻がトップページと店舗情報ページで食い違っている",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/access.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "定休日が「火曜日・第3水曜日」。トップページは「火曜日」のみで、第3水曜日の記載がない",
+        "severity": "中",
+        "reason": "トップページが省略しているだけの可能性もあり、食い違いかどうかは断定できない",
+        "confidence": "低"
+      },
+      {
+        "page_url": "http://localhost:4173/news.html",
+        "check_type": "お知らせの更新が古い",
+        "detail": "最終更新日が「2023年12月20日」。チェック日の時点で2年以上お知らせが更新されていない",
+        "severity": "中",
+        "reason": "最新のお知らせと最終更新日がともに2023年12月20日で、チェック日から1年以上経過している",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/news.html",
+        "check_type": "終了済みの告知",
+        "detail": "終了済みの「2023年12月30日〜2024年1月3日」の年末年始休業の案内が最新のお知らせのまま",
+        "severity": "中",
+        "reason": "過去の年の営業案内が更新されずに残っている",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html",
+        "check_type": "お知らせの更新が古い",
+        "detail": "トップページのお知らせ欄の最新が「2023.12.20」のまま",
+        "severity": "中",
+        "reason": "トップページに表示されているお知らせの最新日付がチェック日から1年以上前",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html",
+        "check_type": "古い年号表記",
+        "detail": "フッターのコピーライトが「© 2021」。店舗情報ページは「© 2026」で、表記もそろっていない",
+        "severity": "低",
+        "reason": "©の年がチェック日の年より前で、ページによって年が異なる",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/news.html",
+        "check_type": "古い年号表記",
+        "detail": "フッターのコピーライトが「© 2021」のまま",
+        "severity": "低",
+        "reason": "©の年がチェック日の年より前",
+        "confidence": "高"
+      }
+    ]
+  }
+}

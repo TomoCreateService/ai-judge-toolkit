@@ -1,0 +1,5 @@
+# チェックするURLを1行に1つずつ書きます（# で始まる行は無視されます）
+# 下の3つは tests/fixtures/site/ のデモ用サイトです（--serve-fixtures で起動）
+http://localhost:4173/index.html
+http://localhost:4173/news.html
+http://localhost:4173/access.html

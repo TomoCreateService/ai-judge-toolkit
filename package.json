@@ -1,0 +1,23 @@
+{
+  "name": "ai-judge-toolkit",
+  "version": "1.0.0",
+  "description": "入力を読み込み、条件ファイルに沿ってAIで判定・分類し、CSVに記録する汎用ツール",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "inquiry": "node src/cli.mjs --example inquiry",
+    "inquiry:sample": "node src/cli.mjs --example inquiry --sample",
+    "site-check": "node src/cli.mjs --example site-check --serve-fixtures",
+    "site-check:sample": "node src/cli.mjs --example site-check --serve-fixtures --sample",
+    "examples:update": "npm run inquiry:sample && npm run site-check:sample && cp output/inquiry_result.csv examples/inquiry/expected-output.csv && cp output/site_check_report.csv examples/site-check/expected-output.csv && cp output/site_check_summary.md examples/site-check/expected-summary.md"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "cheerio": "^1.2.0",
+    "csv-stringify": "^6.9.0"
+  }
+}
