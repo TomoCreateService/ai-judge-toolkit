@@ -1,5 +1,7 @@
 const SEVERITY_ORDER = { 高: 0, 中: 1, 低: 2 };
 
+export const PAGE_SEPARATOR = " ↔ ";
+
 const cell = (value) => String(value ?? "").replace(/\|/g, "\\|").replace(/\n/g, " ");
 
 const table = (header, rows) => [
@@ -47,15 +49,30 @@ export const buildSummaryMarkdown = ({ rows, pages, modeLabel, checkedOn }) => {
     "",
     ...(review.length ? review.map((row) => `- ${row.check_type || "判定失敗"}（${row.page_url}）: ${row.detail || row.reason}`) : ["- なし"]),
     "",
-    "## ページ別の検出内容",
   ];
 
-  const pageUrls = [...new Set([...pages.map((page) => page.url), ...findings.map((row) => row.page_url)])];
+  const crossRows = findings.filter((row) => row.page_url.includes(PAGE_SEPARATOR)).sort(bySeverity);
+  if (crossRows.length) {
+    lines.push(
+      "## 複数ページにまたがる項目",
+      "",
+      ...table(
+        ["ページ", "重要度", "チェック種別", "検出方法", "内容", "確信度"],
+        crossRows.map((row) => [row.page_url, row.severity, row.check_type, row.detection, row.detail, row.confidence]),
+      ),
+      "",
+    );
+  }
+  lines.push("## ページ別の検出内容");
+
+  const singleRows = findings.filter((row) => !row.page_url.includes(PAGE_SEPARATOR));
+  const pageUrls = [...new Set([...pages.map((page) => page.url), ...singleRows.map((row) => row.page_url)])];
   for (const url of pageUrls) {
-    const pageRows = findings.filter((row) => row.page_url === url).sort(bySeverity);
+    const pageRows = singleRows.filter((row) => row.page_url === url).sort(bySeverity);
     lines.push("", `### ${url}`, "");
     if (pageRows.length === 0) {
-      lines.push("問題は検出されませんでした。");
+      const related = crossRows.some((row) => row.page_url.split(PAGE_SEPARATOR).includes(url));
+      lines.push(related ? "このページだけの問題は検出されませんでした（ほかのページとの食い違いは「複数ページにまたがる項目」を参照）。" : "問題は検出されませんでした。");
       continue;
     }
     lines.push(

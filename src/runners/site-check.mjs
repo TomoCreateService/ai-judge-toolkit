@@ -5,7 +5,7 @@ import { loadConditions } from "../conditions.mjs";
 import { writeCsv } from "../csv.mjs";
 import { outputColumns, runJudge } from "../engine.mjs";
 import { fetchPage, findBrokenResources } from "../site/crawler.mjs";
-import { buildSummaryMarkdown } from "../site/report.mjs";
+import { PAGE_SEPARATOR, buildSummaryMarkdown } from "../site/report.mjs";
 import { startStaticServer } from "../site/static-server.mjs";
 
 const FIXTURE_PORT = 4173;
@@ -38,11 +38,20 @@ const programRow = ({ pageUrl, checkType, detail, severity }) => ({
   needsReview: "",
 });
 
-const pageName = (pageUrl) => {
+const normalizePageUrl = (value, pageUrls) => {
+  const urls = [...new Set(value.match(/https?:\/\/[^\s↔,、]+/g) ?? [])];
+  if (urls.length < 2) return value;
+  const order = (url) => (pageUrls.includes(url) ? pageUrls.indexOf(url) : Infinity);
+  return urls.sort((a, b) => order(a) - order(b)).join(PAGE_SEPARATOR);
+};
+
+const singlePageName = (pageUrl) => {
   if (!URL.canParse(pageUrl)) return pageUrl;
   const { host, pathname } = new URL(pageUrl);
   return pathname.split("/").filter(Boolean).at(-1) ?? host;
 };
+
+const pageName = (pageUrl) => pageUrl.split(PAGE_SEPARATOR).map(singlePageName).join(PAGE_SEPARATOR);
 
 const today = () => new Date().toLocaleDateString("sv-SE");
 
@@ -103,7 +112,10 @@ export const runSiteCheck = async ({ root, conditionsPath, inputPath, outputPath
         ]
       : [];
     const results = await runJudge({ items, conditions, client });
-    const aiRows = results.flatMap((result) => result.rows.map((row) => ({ ...row, detection: "AI" })));
+    const fetchedUrls = fetched.map((page) => page.url);
+    const aiRows = results.flatMap((result) =>
+      result.rows.map((row) => ({ ...row, page_url: normalizePageUrl(row.page_url, fetchedUrls), detection: "AI" })),
+    );
     for (const result of results) {
       if (result.error) console.log(`  ✗ ${result.error}`);
       for (const warning of result.warnings) console.log(`  ! ${warning}`);

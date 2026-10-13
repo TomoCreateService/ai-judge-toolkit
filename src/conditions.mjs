@@ -19,13 +19,17 @@ const normalizeColumn = (path, column, index) => {
     fail(path, `${where}（${column.key}）は enum なので values に選択肢を指定してください`);
   }
   if (!["text", "enum"].includes(type)) fail(path, `${where}（${column.key}）の type は "text" か "enum" にしてください`);
+  const maxLength = column.maxLength ? Number(column.maxLength) : undefined;
+  const targetLength = column.targetLength ? Number(column.targetLength) : undefined;
+  if (targetLength && maxLength && targetLength > maxLength) fail(path, `${where}（${column.key}）の targetLength は maxLength 以下にしてください`);
   return {
     key: column.key,
     label: column.label,
     source,
     type,
     values: type === "enum" ? column.values : undefined,
-    maxLength: column.maxLength ? Number(column.maxLength) : undefined,
+    maxLength,
+    targetLength,
     description: column.description ?? "",
   };
 };
@@ -55,8 +59,9 @@ const parseJson = (path, text) => {
 const parseFormat = (format) => {
   const enumMatch = format.match(/^選択肢\s*[:：]\s*(.+)$/);
   if (enumMatch) return { type: "enum", values: enumMatch[1].split("/").map((v) => v.trim()).filter(Boolean) };
-  const lengthMatch = format.match(/(\d+)\s*文字以内/);
-  return { type: "text", maxLength: lengthMatch ? Number(lengthMatch[1]) : undefined };
+  const target = format.match(/(\d+)\s*文字以内/)?.[1];
+  const limit = format.match(/上限\s*(\d+)\s*文字/)?.[1] ?? target;
+  return { type: "text", targetLength: target ? Number(target) : undefined, maxLength: limit ? Number(limit) : undefined };
 };
 
 const parseMarkdown = (path, text) => {

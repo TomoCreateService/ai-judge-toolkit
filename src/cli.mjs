@@ -88,7 +88,9 @@ const buildSettings = (args) => {
   };
 };
 
-const formatUsd = (usd) => `約$${usd.toFixed(4)}（約${Math.ceil(usd * 150)}円・1ドル150円換算）`;
+const formatYen = (yen) => (yen < 1 ? `約${yen.toFixed(2)}円` : `約${Math.round(yen)}円`);
+
+const formatUsd = (usd) => `約$${usd.toFixed(4)}（${formatYen(usd * 150)}・1ドル150円換算）`;
 
 const main = async () => {
   const envPath = join(ROOT, ".env");

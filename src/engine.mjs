@@ -14,6 +14,7 @@ const COMMON_AI_COLUMNS = [
     label: "判定理由",
     source: "ai",
     type: "text",
+    targetLength: 80,
     maxLength: 100,
     description: "その判定にした根拠。入力中の具体的な記述に触れて簡潔に書く",
   },
@@ -36,7 +37,8 @@ export const outputColumns = (conditions) => [...conditions.columns, ...COMMON_A
 const describeColumn = (column) => {
   const parts = [column.description];
   if (column.type === "enum") parts.push(`選択肢: ${column.values.join(" / ")}`);
-  if (column.maxLength) parts.push(`${column.maxLength}文字以内`);
+  const length = column.targetLength ?? column.maxLength;
+  if (length) parts.push(`${length}文字以内`);
   return parts.filter(Boolean).join("。");
 };
 

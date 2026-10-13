@@ -2,67 +2,83 @@
   "site": {
     "findings": [
       {
-        "page_url": "http://localhost:4173/access.html",
-        "check_type": "ページ間の情報不一致",
-        "detail": "電話番号が「03-1234-5687」。トップページの「03-1234-5678」と末尾2桁が逆になっている",
+        "page_url": "http://localhost:4173/index.html",
+        "check_type": "お知らせの更新が古い",
+        "detail": "お知らせの最新は「2023.12.20 年末年始の営業について」で、チェック日から2年以上更新がない",
         "severity": "高",
-        "reason": "同じ店舗の電話番号がページによって異なり、どちらかが誤りの可能性が高い",
+        "reason": "最新の日付がチェック日（2026-10-14）から1年以上前のため、重要度を上げて高とした",
         "confidence": "高"
-      },
-      {
-        "page_url": "http://localhost:4173/access.html",
-        "check_type": "ページ間の情報不一致",
-        "detail": "営業時間が「10:00〜18:00」。トップページの「9:00〜18:00」と開店時刻が違う",
-        "severity": "高",
-        "reason": "営業時間の開始時刻がトップページと店舗情報ページで食い違っている",
-        "confidence": "高"
-      },
-      {
-        "page_url": "http://localhost:4173/access.html",
-        "check_type": "ページ間の情報不一致",
-        "detail": "定休日が「火曜日・第3水曜日」。トップページは「火曜日」のみで、第3水曜日の記載がない",
-        "severity": "中",
-        "reason": "トップページが省略しているだけの可能性もあり、食い違いかどうかは断定できない",
-        "confidence": "低"
       },
       {
         "page_url": "http://localhost:4173/news.html",
         "check_type": "お知らせの更新が古い",
-        "detail": "最終更新日が「2023年12月20日」。チェック日の時点で2年以上お知らせが更新されていない",
+        "detail": "「最終更新日：2023年12月20日」のままで、チェック日から2年以上更新されていない",
+        "severity": "高",
+        "reason": "最終更新日がチェック日から1年以上前のため、重要度を上げて高とした",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html",
+        "check_type": "終了済みの告知",
+        "detail": "「年末年始の営業について」が掲載されたままになっている",
         "severity": "中",
-        "reason": "最新のお知らせと最終更新日がともに2023年12月20日で、チェック日から1年以上経過している",
+        "reason": "告知の期間が2023年12月30日〜2024年1月3日で、チェック日より前に終わっている",
         "confidence": "高"
       },
       {
         "page_url": "http://localhost:4173/news.html",
         "check_type": "終了済みの告知",
-        "detail": "終了済みの「2023年12月30日〜2024年1月3日」の年末年始休業の案内が最新のお知らせのまま",
+        "detail": "「2023年12月30日（土）〜2024年1月3日（水）はお休み」の告知が残っている",
         "severity": "中",
-        "reason": "過去の年の営業案内が更新されずに残っている",
+        "reason": "告知の期間がチェック日より前に終わっているのに掲載されたままのため",
         "confidence": "高"
       },
       {
-        "page_url": "http://localhost:4173/index.html",
-        "check_type": "お知らせの更新が古い",
-        "detail": "トップページのお知らせ欄の最新が「2023.12.20」のまま",
+        "page_url": "http://localhost:4173/news.html",
+        "check_type": "終了済みの告知",
+        "detail": "「2022.07.15 夏のスタンプキャンペーン」が掲載されたままになっている",
         "severity": "中",
-        "reason": "トップページに表示されているお知らせの最新日付がチェック日から1年以上前",
-        "confidence": "高"
+        "reason": "夏のキャンペーンで2022年の投稿。期間の記載がなく、終了の確認はできない",
+        "confidence": "低"
       },
       {
         "page_url": "http://localhost:4173/index.html",
         "check_type": "古い年号表記",
-        "detail": "フッターのコピーライトが「© 2021」。店舗情報ページは「© 2026」で、表記もそろっていない",
+        "detail": "フッターの「© 2021 Sample Bakery」が古いまま",
         "severity": "低",
-        "reason": "©の年がチェック日の年より前で、ページによって年が異なる",
+        "reason": "コピーライトの年がチェック日の年（2026年）より前のままのため",
         "confidence": "高"
       },
       {
         "page_url": "http://localhost:4173/news.html",
         "check_type": "古い年号表記",
-        "detail": "フッターのコピーライトが「© 2021」のまま",
+        "detail": "フッターの「© 2021 Sample Bakery」が古いまま",
         "severity": "低",
-        "reason": "©の年がチェック日の年より前",
+        "reason": "コピーライトの年がチェック日の年（2026年）より前のままのため",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/access.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "営業時間：トップは「9:00〜18:00」、店舗情報は「10:00〜18:00」",
+        "severity": "高",
+        "reason": "同じ営業時間の情報が両ページで食い違っており、来店時に困るため",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/access.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "定休日：トップは「火曜日」、店舗情報は「火曜日・第3水曜日」",
+        "severity": "高",
+        "reason": "定休日の情報が両ページで食い違っており、来店時に困るため",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/access.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "電話番号：トップは「03-1234-5678」、店舗情報は「03-1234-5687」",
+        "severity": "高",
+        "reason": "電話番号の数字が両ページで食い違っており、連絡できなくなるため",
         "confidence": "高"
       }
     ]
