@@ -1,0 +1,1246 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  color: rgb(85, 85, 85);
+  font-family: "Tsukushi A Round Gothic";
+}
+.responsive-break {
+  display: none;
+}
+#l-concept {
+  width: calc(100vw);
+  height: calc(47.8472vw);
+  background: rgb(254, 236, 210);
+}
+#l-concept .l-concept__bg {
+  position: relative;
+  height: 100%;
+}
+#l-concept .l-concept__bg-mz1 {
+  position: absolute;
+  top: calc(25.6944vw);
+  left: calc(87.5694vw);
+  width: calc(12.4306vw);
+  height: calc(20.6944vw);
+}
+#l-concept .l-concept__bg-mz2 {
+  position: absolute;
+  top: calc(3.75vw);
+  left: calc(76.3889vw);
+  width: calc(20.5556vw);
+  height: calc(15.7639vw);
+}
+#l-concept .l-concept__bg-mz3 {
+  position: absolute;
+  top: calc(31.3194vw);
+  left: calc(2.77778vw);
+  width: calc(11.3889vw);
+  height: calc(13.6111vw);
+}
+#l-concept .l-concept__bg-mz4 {
+  position: absolute;
+  top: calc(20vw);
+  left: calc(8.95833vw);
+  width: calc(9.86111vw);
+  height: calc(11.25vw);
+}
+#l-concept .l-concept__bg-mz5 {
+  position: absolute;
+  top: calc(3.125vw);
+  right: calc(89.3056vw);
+  width: calc(10.6944vw);
+  height: calc(13.8194vw);
+}
+#l-concept .l-concept__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+#l-concept .l-concept__main-mz {
+  width: calc(18.8972vw);
+  margin-top: calc(4.44444vw);
+}
+#l-concept .l-concept__main-icon {
+  width: calc(6.69028vw);
+  margin-top: calc(-1.11111vw);
+}
+#l-concept .l-concept__main .l-concept__sub {
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+  margin-top: calc(3.39236vw);
+}
+#l-concept .l-concept__main .l-concept__sub-em {
+  font-size: calc(1.52778vw);
+  letter-spacing: calc(0.0763889vw);
+}
+#l-concept .l-concept__main .l-concept__sub-em1 {
+  color: rgb(229, 118, 71);
+  background-image: linear-gradient(transparent 60%, rgb(255, 247, 236) 60%);
+}
+#l-concept .l-concept__main .l-concept__sentence {
+  color: rgb(86, 48, 20);
+  text-align: center;
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(2.01389vw);
+  letter-spacing: calc(0.0625vw);
+  margin-top: calc(2.36111vw);
+}
+#l-menu {
+  width: calc(100vw);
+  height: calc(77.2222vw);
+  background: rgb(255, 247, 236);
+}
+#l-menu .l-menu__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+#l-menu .l-menu__main-mz {
+  width: calc(7.75208vw);
+  margin-top: calc(4.44444vw);
+}
+#l-menu .l-menu__main-icon {
+  width: calc(6.69028vw);
+  margin-bottom: calc(3.04514vw);
+}
+#l-menu .l-menu__main-container {
+  width: calc(68.0556vw);
+  height: calc(49.1667vw);
+}
+#l-menu .l-menu__main-container-3box {
+  display: flex;
+  width: 100%;
+  height: calc(20.8333vw);
+  justify-content: space-between;
+  margin-bottom: calc(3.75vw);
+}
+#l-menu .l-menu__main-container-3box-box {
+  width: calc(20.8333vw);
+  height: calc(20.8333vw);
+  border-radius: 4px;
+  background: rgb(254, 236, 210);
+  position: relative;
+}
+#l-menu .l-menu__main-container-3box-box-img {
+  margin: calc(2.08333vw) calc(2.08333vw) 0px;
+  width: calc(16.6667vw);
+  height: calc(13.8889vw);
+}
+#l-menu .l-menu__main-container-3box-box-item {
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+  margin: calc(1.38889vw) calc(0vw) 0px calc(2.77778vw);
+}
+#l-menu .l-menu__main-container-3box-box-emicon {
+  position: absolute;
+  top: calc(-2.08333vw);
+  left: calc(-1.38889vw);
+  z-index: 100;
+  width: calc(6.94444vw);
+  height: calc(6.94444vw);
+}
+#l-menu .l-menu__main-container-3box-box-emicon-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#l-menu .l-menu__main-container-3box-box-emicon-span {
+  color: rgb(255, 255, 255);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.11111vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0555556vw);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+#l-menu .l-menu__main-more {
+  width: calc(19.7917vw);
+  height: calc(3.26389vw);
+  margin-top: calc(0.138889vw);
+  border-radius: calc(0.277778vw);
+  background: rgb(229, 118, 71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+#l-menu .l-menu__main-more-sentence {
+  color: rgb(255, 255, 255);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+}
+#l-menu .l-menu__main-more-arrow {
+  width: calc(1.80556vw);
+  height: calc(0.625vw);
+  fill: none;
+  margin: calc(0.555556vw);
+}
+#l-menu .l-menu__main-more:hover {
+  opacity: 0.7;
+}
+#l-setmenu {
+  width: calc(100vw);
+  height: calc(55.7639vw);
+  background: rgb(254, 236, 210);
+  position: relative;
+}
+#l-setmenu .l-setmenu__img-right {
+  position: absolute;
+  width: calc(21.1111vw);
+  height: calc(22.2222vw);
+  top: calc(-5.90278vw);
+  right: calc(0vw);
+}
+#l-setmenu .l-setmenu__message {
+  color: rgb(86, 48, 20);
+  text-align: center;
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(3.47222vw);
+  letter-spacing: calc(0.0625vw);
+  padding-top: calc(5.55556vw);
+  padding-bottom: calc(4.44444vw);
+}
+#l-setmenu .l-setmenu__message-em {
+  color: rgb(229, 118, 71);
+  background-image: linear-gradient(transparent 60%, rgb(255, 247, 236) 60%);
+  font-size: calc(1.80556vw);
+  letter-spacing: calc(0.0902778vw);
+}
+#l-setmenu .l-setmenu__main {
+  display: flex;
+  justify-content: space-between;
+  width: calc(69.4444vw);
+  height: calc(31.875vw);
+  align-items: center;
+  margin: 0px auto;
+}
+#l-setmenu .l-setmenu__main-container {
+  border-radius: calc(0.277778vw);
+  background: rgb(255, 247, 236);
+  width: calc(33.3333vw);
+  height: 100%;
+}
+#l-setmenu .l-setmenu__main-container-top {
+  margin-top: calc(2.77778vw);
+  display: flex;
+}
+#l-setmenu .l-setmenu__main-container-top-left {
+  margin-left: calc(2.77778vw);
+}
+#l-setmenu .l-setmenu__main-container-top-left-title {
+  color: rgb(229, 118, 71);
+  -webkit-text-stroke-color: rgb(229, 118, 71);
+  font-family: "Academy Engraved LET";
+  font-size: calc(2.5vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: calc(0.25vw);
+}
+#l-setmenu .l-setmenu__main-container-top-left-sub {
+  margin-top: calc(1.66667vw);
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(2.01389vw);
+  letter-spacing: calc(0.0625vw);
+}
+#l-setmenu .l-setmenu__main-container-top-right {
+  width: calc(11.6667vw);
+  height: calc(11.8056vw);
+  margin-left: calc(1.38889vw);
+}
+#l-setmenu .l-setmenu__main-container-bottom {
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+}
+#l-setmenu .l-setmenu__main-container-bottom-title {
+  display: flex;
+  justify-content: space-between;
+  margin: calc(1.11111vw) calc(2.77778vw) 0px;
+  font-weight: 700;
+}
+#l-setmenu .l-setmenu__main-container-bottom-sub {
+  font-weight: 400;
+  margin-left: calc(4.16667vw);
+  margin-top: calc(0.416667vw);
+}
+footer {
+  position: relative;
+  width: calc(100vw);
+  height: calc(17.7778vw);
+  flex-shrink: 0;
+  background: rgb(86, 48, 20);
+  overflow: hidden;
+}
+#l-menuheader {
+  width: calc(100vw);
+  height: calc(18.0556vw);
+  position: relative;
+  overflow: hidden;
+}
+#l-menuheader .l-menuheader-img {
+  width: 100%;
+  height: 384%;
+  position: absolute;
+  top: -29%;
+  left: 0%;
+  background: rgba(86, 48, 20, 0.7);
+}
+#l-menuheader .l-menuheader-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(86, 48, 20, 0.7);
+}
+#l-menuheader .l-menuheader-title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Academy Engraved LET";
+  font-size: calc(3.33333vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: calc(0.166667vw);
+}
+#l-singlemenu {
+  width: calc(100vw);
+  height: calc(103.403vw);
+  background: rgb(255, 247, 236);
+}
+#l-singlemenu .l-singlemenu__title {
+  display: flex;
+  justify-content: center;
+  padding-top: calc(4.44444vw);
+}
+#l-singlemenu .l-singlemenu__title-sentence {
+  display: inline-flex;
+  padding: calc(0.694444vw) calc(4.44444vw);
+  justify-content: center;
+  align-items: center;
+  gap: calc(0.694444vw);
+  border-radius: calc(0.694444vw);
+  background: rgb(86, 48, 20);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.38889vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0694444vw);
+}
+#l-singlemenu .l-singlemenu__sub {
+  padding-top: calc(2.22222vw);
+  color: rgb(86, 48, 20);
+  text-align: center;
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+}
+#l-singlemenu .l-singlemenu__main-container {
+  margin: calc(4.72222vw) auto;
+  width: calc(68.0556vw);
+  height: calc(49.1667vw);
+}
+#l-singlemenu .l-singlemenu__main-container-3box {
+  display: flex;
+  width: 100%;
+  height: calc(38.1944vw);
+  justify-content: space-between;
+  margin-bottom: calc(3.75vw);
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box {
+  width: calc(22.0139vw);
+  height: 100%;
+  position: relative;
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-img {
+  background: rgb(255, 255, 255);
+  border-radius: calc(6.94444vw) calc(6.94444vw) calc(0.138889vw)
+    calc(0.138889vw);
+  width: calc(22.0139vw);
+  height: calc(19.4444vw);
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-item {
+  width: calc(22.0139vw);
+  height: calc(18.75vw);
+  background: rgb(254, 236, 210);
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-item-title {
+  text-align: center;
+  font-size: calc(1.38889vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0694444vw);
+  padding-top: calc(2.22222vw);
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-item-line {
+  margin: 0px auto;
+  width: calc(10.5556vw);
+  height: calc(0.555556vw);
+  background: linear-gradient(
+      to right,
+      rgb(86, 48, 20),
+      rgb(86, 48, 20) calc(0.347222vw),
+      transparent calc(0.347222vw)
+    )
+    left bottom / calc(0.694444vw) calc(0.0694444vw) repeat-x;
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-item-sentence {
+  margin: calc(1.66667vw) auto;
+  width: calc(17.5694vw);
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.11111vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0555556vw);
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-emicon {
+  position: absolute;
+  top: calc(-1.04167vw);
+  left: 0px;
+  z-index: 100;
+  width: calc(6.94444vw);
+  height: calc(6.94444vw);
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-emicon-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#l-singlemenu .l-singlemenu__main-container-3box-box-emicon-span {
+  color: rgb(255, 255, 255);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.11111vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0555556vw);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+#l-setmenu2 {
+  width: calc(100vw);
+  height: calc(56.3194vw);
+  background: rgb(254, 236, 210);
+}
+#l-setmenu2 .l-singlemenu2__title {
+  display: flex;
+  justify-content: center;
+  padding-top: calc(4.44444vw);
+}
+#l-setmenu2 .l-singlemenu2__title-sentence {
+  display: inline-flex;
+  padding: calc(0.694444vw) calc(4.44444vw);
+  justify-content: center;
+  align-items: center;
+  gap: calc(0.694444vw);
+  border-radius: calc(0.694444vw);
+  background: rgb(86, 48, 20);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.38889vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0694444vw);
+}
+#l-setmenu2 .l-singlemenu2__sub {
+  padding-top: calc(2.22222vw);
+  color: rgb(86, 48, 20);
+  text-align: center;
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+  padding-bottom: calc(3.88889vw);
+}
+#l-setmenu2 .l-setmenu2__main {
+  display: flex;
+  justify-content: space-between;
+  width: calc(69.4444vw);
+  height: calc(31.875vw);
+  align-items: center;
+  margin: 0px auto;
+}
+#l-setmenu2 .l-setmenu2__main-container {
+  border-radius: calc(0.277778vw);
+  background: rgb(255, 247, 236);
+  width: calc(33.3333vw);
+  height: 100%;
+}
+#l-setmenu2 .l-setmenu2__main-container-top {
+  margin-top: calc(2.77778vw);
+  display: flex;
+}
+#l-setmenu2 .l-setmenu2__main-container-top-left {
+  margin-left: calc(2.77778vw);
+}
+#l-setmenu2 .l-setmenu2__main-container-top-left-title {
+  color: rgb(229, 118, 71);
+  -webkit-text-stroke-color: rgb(229, 118, 71);
+  font-family: "Academy Engraved LET";
+  font-size: calc(2.5vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: calc(0.25vw);
+}
+#l-setmenu2 .l-setmenu2__main-container-top-left-sub {
+  margin-top: calc(1.66667vw);
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(2.01389vw);
+  letter-spacing: calc(0.0625vw);
+}
+#l-setmenu2 .l-setmenu2__main-container-top-right {
+  width: calc(11.6667vw);
+  height: calc(11.8056vw);
+  margin-left: calc(1.38889vw);
+}
+#l-setmenu2 .l-setmenu2__main-container-bottom {
+  color: rgb(86, 48, 20);
+  font-family: "Tsukushi A Round Gothic";
+  font-size: calc(1.25vw);
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: calc(0.0625vw);
+}
+#l-setmenu2 .l-setmenu2__main-container-bottom-title {
+  display: flex;
+  justify-content: space-between;
+  margin: calc(1.11111vw) calc(2.77778vw) 0px;
+  font-weight: 700;
+}
+#l-setmenu2 .l-setmenu2__main-container-bottom-sub {
+  font-weight: 400;
+  margin-left: calc(4.16667vw);
+  margin-top: calc(0.416667vw);
+}
+@media (max-width: 768px) {
+  .responsive-break {
+    display: inline;
+  }
+  #l-concept {
+    width: calc(100vw);
+    height: calc(184.8vw);
+  }
+  #l-concept .l-concept__bg-mz1 {
+    top: calc(117.6vw);
+    left: calc(75.2vw);
+    width: calc(21.6vw);
+    height: calc(32.2667vw);
+  }
+  #l-concept .l-concept__bg-mz2 {
+    top: calc(19.6587vw);
+    left: calc(73.9493vw);
+    width: calc(27.784vw);
+    height: calc(21.3067vw);
+  }
+  #l-concept .l-concept__bg-mz3 {
+    top: calc(157.333vw);
+    left: calc(2.13333vw);
+    width: calc(21.88vw);
+    height: calc(26.1493vw);
+  }
+  #l-concept .l-concept__bg-mz4 {
+    top: calc(75.984vw);
+    left: calc(0vw);
+    width: calc(19.0987vw);
+    height: calc(21.792vw);
+  }
+  #l-concept .l-concept__bg-mz5 {
+    top: calc(1.57867vw);
+    left: calc(0.445333vw);
+    width: calc(23.8827vw);
+    height: calc(22.104vw);
+  }
+  #l-concept .l-concept__main-mz {
+    width: calc(57.8667vw);
+    margin-top: calc(12.8vw);
+  }
+  #l-concept .l-concept__main-icon {
+    width: calc(21.04vw);
+    margin-top: calc(-2.61333vw);
+  }
+  #l-concept .l-concept__main .l-concept__sub {
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+    margin-top: calc(8.53333vw);
+    width: calc(59.7333vw);
+  }
+  #l-concept .l-concept__main .l-concept__sub-em {
+    font-size: calc(5.33333vw);
+    letter-spacing: calc(0.266667vw);
+  }
+  #l-concept .l-concept__main .l-concept__sentence {
+    font-size: calc(4vw);
+    line-height: normal;
+    letter-spacing: calc(0.2vw);
+    margin-top: calc(8.53333vw);
+    width: calc(78.6667vw);
+  }
+  #l-menu {
+    width: calc(100vw);
+    height: calc(581.067vw);
+  }
+  #l-menu .l-menu__main-mz {
+    width: calc(24.8vw);
+    margin-top: calc(12.8vw);
+  }
+  #l-menu .l-menu__main-icon {
+    width: calc(21.04vw);
+    margin-top: calc(-1.6vw);
+    margin-bottom: calc(14.12vw);
+  }
+  #l-menu .l-menu__main-container {
+    width: calc(74.6667vw);
+    height: auto;
+  }
+  #l-menu .l-menu__main-container-3box {
+    flex-direction: column;
+    height: auto;
+  }
+  #l-menu .l-menu__main-container-3box-box {
+    width: 100%;
+    height: calc(74.6667vw);
+    margin-bottom: calc(8.53333vw);
+  }
+  #l-menu .l-menu__main-container-3box-box-img {
+    margin: calc(5.33333vw) calc(5.33333vw) 0px;
+    width: calc(64vw);
+    height: calc(53.3333vw);
+  }
+  #l-menu .l-menu__main-container-3box-box-item {
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+    margin: calc(4.26667vw) 0px 0px calc(8vw);
+  }
+  #l-menu .l-menu__main-container-3box-box-emicon {
+    top: calc(-1.6vw);
+    left: calc(-1.6vw);
+    width: calc(21.3333vw);
+    height: calc(21.3333vw);
+  }
+  #l-menu .l-menu__main-container-3box-box-emicon-span {
+    font-size: calc(3.73333vw);
+    letter-spacing: calc(0.186667vw);
+    width: calc(16vw);
+  }
+  #l-menu .l-menu__main-more {
+    width: calc(73.3333vw);
+    height: calc(11.7333vw);
+    margin-top: calc(-3.73333vw);
+    border-radius: calc(1.06667vw);
+  }
+  #l-menu .l-menu__main-more-sentence {
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-menu .l-menu__main-more-arrow {
+    width: calc(6.93333vw);
+    height: calc(2.4vw);
+    margin: calc(2.13333vw);
+  }
+  #l-setmenu {
+    width: calc(100vw);
+    height: calc(313.333vw);
+  }
+  #l-setmenu .l-setmenu__message {
+    font-size: calc(4.26667vw);
+    line-height: calc(7.46667vw);
+    letter-spacing: calc(0.213333vw);
+    padding-top: calc(27.4667vw);
+    padding-bottom: calc(10.6667vw);
+    width: calc(89.3333vw);
+    margin: 0px auto;
+  }
+  #l-setmenu .l-setmenu__message-em {
+    color: rgb(229, 118, 71);
+    background-image: linear-gradient(transparent 60%, rgb(255, 247, 236) 60%);
+    font-size: calc(5.86667vw);
+    letter-spacing: calc(0.293333vw);
+  }
+  #l-setmenu .l-setmenu__main {
+    display: block;
+    width: calc(89.3333vw);
+    height: auto;
+  }
+  #l-setmenu .l-setmenu__main-container {
+    border-radius: calc(1.06667vw);
+    background: rgb(255, 247, 236);
+    width: 100%;
+    height: calc(106.667vw);
+    margin-bottom: calc(8.53333vw);
+  }
+  #l-setmenu .l-setmenu__main-container-top {
+    margin-top: 0px;
+    margin-bottom: calc(20vw);
+    padding-top: calc(13.0667vw);
+    position: relative;
+  }
+  #l-setmenu .l-setmenu__main-container-top-left {
+    margin-left: calc(6.4vw);
+  }
+  #l-setmenu .l-setmenu__main-container-top-left-title {
+    font-size: calc(8.53333vw);
+    letter-spacing: calc(0.853333vw);
+  }
+  #l-setmenu .l-setmenu__main-container-top-left-sub {
+    margin-top: calc(4.26667vw);
+    font-size: calc(4.26667vw);
+    line-height: normal;
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-setmenu .l-setmenu__main-container-top-right {
+    position: absolute;
+    top: calc(18.1333vw);
+    right: calc(2.4vw);
+    width: calc(32.8vw);
+    height: calc(35.4667vw);
+  }
+  #l-setmenu .l-setmenu__main-container-bottom {
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: calc(6.4vw);
+  }
+  #l-setmenu .l-setmenu__main-container-bottom-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px calc(4.26667vw);
+    font-size: calc(4.26667vw);
+    font-weight: 700;
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-setmenu .l-setmenu__main-container-bottom-sub {
+    font-size: calc(3.73333vw);
+    font-weight: 400;
+    margin-left: calc(8.53333vw);
+    margin-top: calc(1.06667vw);
+    letter-spacing: calc(0.186667vw);
+  }
+  footer {
+    width: calc(100vw);
+    height: calc(90.6667vw);
+  }
+  #l-menuheader {
+    width: calc(100vw);
+    height: calc(42.6667vw);
+    position: relative;
+  }
+  #l-menuheader .l-menuheader-img {
+    width: 106%;
+    height: 173%;
+    top: calc(-11.4667vw);
+    left: calc(0vw);
+  }
+  #l-menuheader .l-menuheader-title {
+    font-size: calc(8.53333vw);
+    letter-spacing: calc(0.426667vw);
+  }
+  #l-singlemenu {
+    width: calc(100vw);
+    height: calc(763.2vw);
+  }
+  #l-singlemenu .l-singlemenu__title {
+    padding-top: calc(12.8vw);
+  }
+  #l-singlemenu .l-singlemenu__title-sentence {
+    padding: calc(2.66667vw) calc(17.0667vw);
+    gap: calc(2.66667vw);
+    border-radius: calc(2.66667vw);
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-singlemenu .l-singlemenu__sub {
+    width: calc(78.6667vw);
+    margin: 0px auto;
+    padding-top: calc(6.4vw);
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container {
+    margin: calc(12.8vw) auto;
+    width: calc(74.6667vw);
+    height: auto;
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: calc(8.53333vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box {
+    width: 100%;
+    margin-bottom: calc(8.53333vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-img {
+    border-radius: calc(26.6667vw) calc(26.6667vw) calc(0.533333vw)
+      calc(0.533333vw);
+    width: 100%;
+    height: calc(50.6667vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-item {
+    width: 100%;
+    height: calc(56vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-item-title {
+    font-size: calc(4.8vw);
+    letter-spacing: calc(0.24vw);
+    padding-top: calc(4.26667vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-item-line {
+    margin: 0px auto;
+    width: calc(40vw);
+    height: calc(2.66667vw);
+    background: linear-gradient(
+        to right,
+        rgb(86, 48, 20),
+        rgb(86, 48, 20) calc(1.33333vw),
+        transparent calc(1.33333vw)
+      )
+      left bottom / calc(2.66667vw) calc(0.533333vw) repeat-x;
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-item-sentence {
+    margin: calc(5.33333vw) auto calc(8.53333vw);
+    width: calc(64vw);
+    font-size: calc(3.73333vw);
+    letter-spacing: calc(0.186667vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-emicon {
+    position: absolute;
+    top: calc(-4vw);
+    left: 0px;
+    z-index: 100;
+    width: calc(20vw);
+    height: calc(20vw);
+  }
+  #l-singlemenu .l-singlemenu__main-container-3box-box-emicon-span {
+    font-size: calc(3.73333vw);
+    line-height: calc(4.8vw);
+    letter-spacing: calc(0.186667vw);
+    width: 80%;
+  }
+  #l-setmenu2 {
+    width: calc(100vw);
+    height: calc(311.733vw);
+  }
+  #l-setmenu2 .l-singlemenu2__title {
+    padding-top: calc(12.8vw);
+  }
+  #l-setmenu2 .l-singlemenu2__title-sentence {
+    padding: calc(2.66667vw) calc(17.0667vw);
+    gap: calc(2.66667vw);
+    border-radius: calc(2.66667vw);
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-setmenu2 .l-singlemenu2__sub {
+    width: calc(78.6667vw);
+    margin: 0px auto;
+    padding-top: calc(6.4vw);
+    font-size: calc(4.26667vw);
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-setmenu2 .l-setmenu2__main {
+    display: block;
+    width: calc(89.3333vw);
+    height: auto;
+  }
+  #l-setmenu2 .l-setmenu2__main-container {
+    border-radius: calc(1.06667vw);
+    background: rgb(255, 247, 236);
+    width: 100%;
+    height: calc(106.667vw);
+    margin-bottom: calc(8.53333vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-top {
+    margin-top: 0px;
+    margin-bottom: calc(20vw);
+    padding-top: calc(13.0667vw);
+    position: relative;
+  }
+  #l-setmenu2 .l-setmenu2__main-container-top-left {
+    margin-left: calc(6.4vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-top-left-title {
+    font-size: calc(8.53333vw);
+    letter-spacing: calc(0.853333vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-top-left-sub {
+    margin-top: calc(4.26667vw);
+    font-size: calc(4.26667vw);
+    line-height: normal;
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-top-right {
+    position: absolute;
+    top: calc(18.1333vw);
+    right: calc(2.4vw);
+    width: calc(32.8vw);
+    height: calc(35.4667vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-bottom {
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: calc(6.4vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-bottom-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px calc(4.26667vw);
+    font-size: calc(4.26667vw);
+    font-weight: 700;
+    letter-spacing: calc(0.213333vw);
+  }
+  #l-setmenu2 .l-setmenu2__main-container-bottom-sub {
+    font-size: calc(3.73333vw);
+    font-weight: 400;
+    margin-left: calc(8.53333vw);
+    margin-top: calc(1.06667vw);
+    letter-spacing: calc(0.186667vw);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  color: rgb(86, 48, 20);
+  background: rgb(255, 250, 241);
+  font-family:
+    "Tsukushi A Round Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.8;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px max(5vw, 20px);
+  background: rgb(86, 48, 20);
+  color: rgb(255, 250, 241);
+}
+.p-brand {
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+.p-brand small {
+  display: block;
+  font:
+    12px Georgia,
+    serif;
+  letter-spacing: 4px;
+}
+.p-header nav,
+.p-footer nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.p-header nav {
+  font-size: 14px;
+}
+.p-hero {
+  position: relative;
+}
+.p-hero > img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+.p-hero__copy {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(33, 24, 13) 0px 2px 12px;
+}
+.p-hero__copy > p:first-child {
+  letter-spacing: 6px;
+  font-size: 14px;
+}
+.p-hero__copy h1 {
+  font-family: serif;
+  font-size: clamp(36px, 5vw, 70px);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 6px;
+  margin: 18px 0px;
+}
+.p-hero__copy > p:last-child {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.p-news {
+  max-width: 1000px;
+  margin: 64px auto;
+  padding: 36px 40px;
+  background: rgb(248, 236, 215);
+  border-radius: 8px;
+}
+.p-news h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 400;
+}
+.p-news > time {
+  margin-right: 24px;
+  font-size: 14px;
+}
+.c-link {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.p-shop,
+.p-gallery {
+  max-width: 1000px;
+  margin: 64px auto;
+  padding: 40px;
+}
+.p-shop {
+  border: 1px solid rgb(220, 197, 165);
+  border-radius: 8px;
+  background: rgb(255, 247, 231);
+}
+.p-shop h2,
+.p-gallery h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.p-shop__name {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.p-note {
+  font-size: 13px;
+  margin-top: 24px;
+}
+.p-gallery img {
+  display: block;
+  width: 480px;
+  height: 220px;
+  background: rgb(248, 236, 215);
+  border: 1px solid rgb(220, 197, 165);
+}
+.p-footer {
+  text-align: center;
+  padding: 48px 20px;
+  color: rgb(255, 250, 241);
+  background: rgb(86, 48, 20);
+}
+.p-footer nav {
+  justify-content: center;
+  margin: 20px 0px;
+}
+.p-footer small {
+  font-size: 12px;
+}
+.p-page-title {
+  padding: 72px 24px;
+  text-align: center;
+  background: rgb(244, 228, 201);
+}
+.p-page-title p {
+  letter-spacing: 5px;
+  font-family: Georgia, serif;
+}
+.p-page-title h1 {
+  margin-top: 12px;
+  font-size: 34px;
+  font-weight: 400;
+}
+.p-news__item {
+  padding: 28px 0px;
+  border-bottom: 1px solid rgb(220, 197, 165);
+}
+.p-news__item h3 {
+  font-size: 20px;
+  margin: 8px 0px;
+}
+.p-news__item a {
+  text-decoration: underline;
+}
+#l-concept .l-concept__main-mz {
+  width: 360px;
+}
+#l-concept .l-concept__sentence {
+  line-height: 2;
+}
+#l-menuheader {
+  margin: 0px;
+}
+#l-menuheader .l-menuheader-img {
+  object-fit: cover;
+}
+#l-menuheader .l-menuheader-title {
+  font-weight: 400;
+}
+#l-singlemenu .l-singlemenu__sub {
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .p-header {
+    display: block;
+    padding: 16px 20px;
+  }
+  .p-brand {
+    font-size: 18px;
+  }
+  .p-header nav {
+    gap: 18px;
+    margin-top: 16px;
+    font-size: 12px;
+  }
+  .p-hero > img {
+    height: 500px;
+    object-position: 63% center;
+  }
+  .p-hero__copy {
+    left: 24px;
+    top: 48px;
+  }
+  .p-hero__copy > p:last-child {
+    font-size: 16px;
+  }
+  .p-news {
+    margin: 32px 20px;
+    padding: 24px;
+  }
+  .p-news > time {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .p-shop,
+  .p-gallery {
+    margin: 40px 20px;
+    padding: 24px;
+  }
+  .p-shop p {
+    overflow-wrap: anywhere;
+  }
+  .p-gallery img {
+    width: 100%;
+    height: 180px;
+  }
+  .p-page-title {
+    padding: 48px 20px;
+  }
+  .p-page-title h1 {
+    font-size: 25px;
+  }
+  #l-concept .l-concept__main-mz {
+    width: 240px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+#l-concept {
+  overflow: clip;
+}
+#l-setmenu {
+  overflow: clip;
+}
+.p-header a:focus-visible,
+.p-footer a:focus-visible,
+main a:focus-visible {
+  outline: rgb(233, 130, 77) solid 3px;
+  outline-offset: 4px;
+}
+
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,50 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>サンプルベーカリー｜町の小さなパン屋さん</title>
-</head>
-<body>
-  <header>
-    <a href="index.html"><img src="images/logo.svg" alt="サンプルベーカリー" width="160" height="40"></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">トップ</a></li>
-        <li><a href="news.html">お知らせ</a></li>
-        <li><a href="access.html">店舗情報・アクセス</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h1>毎朝焼きたて。町の小さなパン屋さん</h1>
-      <img src="images/shop-front.webp" alt="店舗の外観" width="800" height="450">
-      <p>国産小麦と天然酵母にこだわったパンを、毎朝お店で焼き上げています。</p>
-    </section>
-    <section>
-      <h2>営業案内</h2>
-      <dl>
-        <dt>営業時間</dt>
-        <dd>9:00〜18:00（売り切れ次第終了）</dd>
-        <dt>定休日</dt>
-        <dd>火曜日</dd>
-        <dt>電話番号</dt>
-        <dd>03-1234-5678</dd>
-      </dl>
-    </section>
-    <section>
-      <h2>お知らせ</h2>
-      <ul>
-        <li><time datetime="2023-12-20">2023.12.20</time> <a href="news.html#newyear">年末年始の営業について</a></li>
-        <li><time datetime="2023-10-01">2023.10.01</time> <a href="news.html#autumn">秋の新作パンが登場しました</a></li>
-      </ul>
-      <p><a href="news.html">お知らせ一覧へ</a></p>
-    </section>
-  </main>
-  <footer>
-    <p>サンプルベーカリー（架空の店舗です）</p>
-    <p><small>&copy; 2021 Sample Bakery</small></p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ctext y=%2726%27 font-size=%2728%27%3ES%3C/text%3E%3C/svg%3E"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="架空のスコーン専門店のデモサイトです。" />
+    <title>トップ | スコーン工房 サンプル</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="p-header">
+      <a class="p-brand" href="index.html"
+        >スコーン工房 サンプル<small>SCONE &amp; TEA</small></a
+      >
+      <nav aria-label="メインナビゲーション">
+        <a href="index.html">トップ</a><a href="menu.html">メニュー</a
+        ><a href="news.html">お知らせ</a><a href="news.html#shop">店舗情報</a>
+      </nav>
+    </header>
+    <main>
+      <section class="p-hero">
+        <img
+          src="images/FV2.webp"
+          alt="スコーンと紅茶のアフタヌーンティー"
+          width="1440"
+          height="994"
+        />
+        <div class="p-hero__copy">
+          <p>SCONE &amp; TEA</p>
+          <h1>スコーン工房<br />サンプル</h1>
+          <p>アフタヌーンティーを<br />もっと手軽に。</p>
+        </div>
+      </section>
+      <section class="p-news">
+        <h2>お知らせ</h2>
+        <time datetime="2023-12-20">2023.12.20</time
+        ><a href="news.html#holiday">年末年始の営業について</a
+        ><a class="c-link" href="news.html">お知らせ一覧へ →</a>
+      </section>
+      <section id="l-concept">
+        <div class="l-concept__bg">
+          <img
+            class="l-concept__bg-mz1"
+            src="images/mz1.webp"
+            alt=""
+            width="165"
+            height="282"
+          />
+          <img
+            class="l-concept__bg-mz2"
+            src="images/mz2.webp"
+            alt=""
+            width="258"
+            height="199"
+          />
+          <img
+            class="l-concept__bg-mz3"
+            src="images/mz3.webp"
+            alt=""
+            width="135"
+            height="175"
+          />
+          <img
+            class="l-concept__bg-mz4"
+            src="images/mz4.webp"
+            alt=""
+            width="113"
+            height="135"
+          />
+          <img
+            class="l-concept__bg-mz5"
+            src="images/mz5.webp"
+            alt=""
+            width="141"
+            height="179"
+          />
+          <div class="l-concept__main">
+            <img
+              class="l-concept__main-mz"
+              src="images/concept.svg"
+              alt=""
+              width="360"
+              height="60"
+            />
+            <img
+              class="l-concept__main-icon"
+              src="images/icon.webp"
+              alt=""
+              width="97"
+              height="79"
+            />
+            <h2 class="l-concept__sub">
+              ここは架空の<br class="responsive-break" /><span
+                class="l-concept__sub-em"
+                >”<span class="l-concept__sub-em1">スコーン専門店</span>”</span
+              >です。
+            </h2>
+            <p class="l-concept__sentence">
+              スコーンといえばイギリスのアフタヌーンティー。<br />
+              すこし高級なイメージですが、<br />
+              もっと手軽にスコーンを食べてほしいと思い<br />
+              このお店をOPENさせました。<br />
+              <br />
+              ふらっと立ち寄ってほっとひといきするもよし、<br />
+              持ち帰っておうちのおやつにするもよし。<br />
+              <br />
+              子どもからおとなまで<br />
+              みんな仲良く食べられるスコーンをご用意しております。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="l-menu">
+        <h2 class="u-visually-hidden">メニュー</h2>
+        <div class="l-menu__main">
+          <img
+            class="l-menu__main-mz"
+            src="images/menu.webp"
+            alt=""
+            width="112"
+            height="48"
+          />
+          <img
+            class="l-menu__main-icon"
+            src="images/icon.webp"
+            alt=""
+            width="97"
+            height="79"
+          />
+          <div class="l-menu__main-container">
+            <div class="l-menu__main-container-3box">
+              <div class="l-menu__main-container-3box-box">
+                <img
+                  class="l-menu__main-container-3box-box-img"
+                  src="images/plane.webp"
+                  alt="プレーンスコーン"
+                  width="240"
+                  height="200"
+                />
+                <h3 class="l-menu__main-container-3box-box-item">プレーン</h3>
+                <div class="l-menu__main-container-3box-box-emicon">
+                  <img
+                    class="l-menu__main-container-3box-box-emicon-img"
+                    src="images/emicon1.webp"
+                    alt=""
+                    width="100"
+                    height="100"
+                  />
+                  <span class="l-menu__main-container-3box-box-emicon-span"
+                    >人気No.1</span
+                  >
+                </div>
+              </div>
+              <div class="l-menu__main-container-3box-box">
+                <img
+                  class="l-menu__main-container-3box-box-img"
+                  src="images/blueberry.webp"
+                  alt="レーズン入りスコーン"
+                  width="240"
+                  height="200"
+                />
+                <h3 class="l-menu__main-container-3box-box-item">レーズン</h3>
+                <div class="l-menu__main-container-3box-box-emicon">
+                  <img
+                    class="l-menu__main-container-3box-box-emicon-img"
+                    src="images/emicon1.webp"
+                    alt=""
+                    width="100"
+                    height="100"
+                  />
+                  <span class="l-menu__main-container-3box-box-emicon-span"
+                    >スタッフ<br />おすすめ</span
+                  >
+                </div>
+              </div>
+              <div class="l-menu__main-container-3box-box">
+                <img
+                  class="l-menu__main-container-3box-box-img"
+                  src="images/mixberry.webp"
+                  alt="ベリークリームのスコーン"
+                  width="240"
+                  height="200"
+                />
+                <h3 class="l-menu__main-container-3box-box-item">
+                  ミックスベリー
+                </h3>
+              </div>
+            </div>
+            <div class="l-menu__main-container-3box">
+              <div class="l-menu__main-container-3box-box">
+                <img
+                  class="l-menu__main-container-3box-box-img"
+                  src="images/whitechoco.webp"
+                  alt="ホワイトチョコのスコーン"
+                  width="240"
+                  height="200"
+                />
+                <h3 class="l-menu__main-container-3box-box-item">
+                  ホワイトチョコ
+                </h3>
+              </div>
+              <div class="l-menu__main-container-3box-box">
+                <img
+                  class="l-menu__main-container-3box-box-img"
+                  src="images/blueberry.webp"
+                  alt="レーズン入りスコーン"
+                  width="240"
+                  height="200"
+                />
+                <h3 class="l-menu__main-container-3box-box-item">
+                  ブルーベリー
+                </h3>
+              </div>
+              <div class="l-menu__main-container-3box-box">
+                <img
+                  class="l-menu__main-container-3box-box-img"
+                  src="images/pumpkin.webp"
+                  alt="季節のスコーン"
+                  width="240"
+                  height="200"
+                />
+                <h3 class="l-menu__main-container-3box-box-item">パンプキン</h3>
+                <div class="l-menu__main-container-3box-box-emicon">
+                  <img
+                    class="l-menu__main-container-3box-box-emicon-img"
+                    src="images/emicon2.webp"
+                    alt=""
+                    width="100"
+                    height="100"
+                  />
+                  <span class="l-menu__main-container-3box-box-emicon-span"
+                    >季節限定</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="menu.html" class="l-menu__main-more">
+            <div class="l-menu__main-more-sentence">もっとみる</div>
+            <svg
+              class="l-menu__main-more-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 26 9"
+            >
+              <path
+                d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM25.3536 4.85355C25.5488 4.65829 25.5488 4.34171 25.3536 4.14645L22.1716 0.964466C21.9763 0.769204 21.6597 0.769204 21.4645 0.964466C21.2692 1.15973 21.2692 1.47631 21.4645 1.67157L24.2929 4.5L21.4645 7.32843C21.2692 7.52369 21.2692 7.84027 21.4645 8.03553C21.6597 8.2308 21.9763 8.2308 22.1716 8.03553L25.3536 4.85355ZM1 5H25V4H1V5Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section id="l-setmenu">
+        <img
+          src="images/right-scoon.webp"
+          class="l-setmenu__img-right"
+          alt=""
+          width="304"
+          height="320"
+        />
+        <h2 class="l-setmenu__message">
+          当店では <span class="l-setmenu__message-em">eat in</span> と
+          <span class="l-setmenu__message-em">take out</span>
+          どちらもご用意しております<br />
+          その日の気分にあわせて、スコーンタイムをお過ごしください
+        </h2>
+        <div class="l-setmenu__main">
+          <div class="l-setmenu__main-container">
+            <div class="l-setmenu__main-container-top">
+              <div class="l-setmenu__main-container-top-left">
+                <h3 class="l-setmenu__main-container-top-left-title">eat in</h3>
+                <div class="l-setmenu__main-container-top-left-sub">
+                  焼きたてスコーンと紅茶を<br />店内でゆったりと・・
+                </div>
+              </div>
+              <img
+                src="images/eatin.webp"
+                class="l-setmenu__main-container-top-right"
+                alt=""
+                width="168"
+                height="170"
+              />
+            </div>
+            <div class="l-setmenu__main-container-bottom">
+              <div class="l-setmenu__main-container-bottom-title">
+                <h3>＊アフタヌーンティーセット</h3>
+                <h3>¥800</h3>
+              </div>
+              <p class="l-setmenu__main-container-bottom-sub">
+                スコーン2種とドリンクがつきます
+              </p>
+            </div>
+            <div class="l-setmenu__main-container-bottom">
+              <div class="l-setmenu__main-container-bottom-title">
+                <h3>＊日替わりスコーン3種</h3>
+                <h3>¥700</h3>
+              </div>
+              <p class="l-setmenu__main-container-bottom-sub">
+                ミニサイズのスコーンでいろんな味を<br />
+                堪能できます
+              </p>
+            </div>
+          </div>
+          <div class="l-setmenu__main-container">
+            <div class="l-setmenu__main-container-top">
+              <div class="l-setmenu__main-container-top-left">
+                <h3 class="l-setmenu__main-container-top-left-title">
+                  take out
+                </h3>
+                <div class="l-setmenu__main-container-top-left-sub">
+                  持ち帰っておうちで<br />アフタヌーンタイムを・・
+                </div>
+              </div>
+              <img
+                src="images/takeout.webp"
+                class="l-setmenu__main-container-top-right"
+                alt=""
+                width="150"
+                height="170"
+              />
+            </div>
+            <div class="l-setmenu__main-container-bottom">
+              <div class="l-setmenu__main-container-bottom-title">
+                <h3>＊おうち de アフタヌーン</h3>
+                <h3>¥800</h3>
+              </div>
+              <p class="l-setmenu__main-container-bottom-sub">
+                スコーン2種とティーパック紅茶のセット<br />
+                おうちでアフタヌーンティーが楽しめます
+              </p>
+            </div>
+            <div class="l-setmenu__main-container-bottom">
+              <div class="l-setmenu__main-container-bottom-title">
+                <h3>＊日替わりスコーン詰め合わせ</h3>
+                <h3>¥1,000</h3>
+              </div>
+              <p class="l-setmenu__main-container-bottom-sub">
+                ミニサイズのスコーン<br />家族みんなで食べるならこちらがおすすめ
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-shop" id="shop">
+        <h2>店舗情報</h2>
+        <p class="p-shop__name">スコーン工房 サンプル</p>
+        <p>〒000-0000 サンプル県サンプル市架空町1-2-3</p>
+        <p>電話番号：000-0000-0002</p>
+        <p>営業時間：9:00〜18:00</p>
+        <p>定休日：火曜日</p>
+        <p class="p-note">この店舗・住所・電話番号はデモ用の架空情報です。</p>
+      </section>
+      <section class="p-gallery">
+        <h2>工房の風景</h2>
+        <img
+          src="images/shop-front.webp"
+          alt="店舗の外観"
+          width="480"
+          height="320"
+        />
+      </section>
+    </main>
+    <footer class="p-footer">
+      <p>スコーン工房 サンプル</p>
+      <nav aria-label="フッターナビゲーション">
+        <a href="index.html">トップ</a><a href="menu.html">メニュー</a
+        ><a href="news.html#shop">店舗情報</a>
+      </nav>
+      <p>© 2021 スコーン工房 サンプル</p>
+      <small>このサイトは自動チェック用の架空店舗デモです。</small>
+    </footer>
+  </body>
 </html>

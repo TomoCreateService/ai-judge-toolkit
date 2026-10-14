@@ -13,7 +13,7 @@
     "inquiry:sample": "node src/cli.mjs --example inquiry --sample",
     "site-check": "node src/cli.mjs --example site-check --serve-fixtures",
     "site-check:sample": "node src/cli.mjs --example site-check --serve-fixtures --sample",
-    "examples:update": "npm run inquiry:sample && npm run site-check:sample && cp output/inquiry_result.csv examples/inquiry/expected-output.csv && cp output/site_check_report.csv examples/site-check/expected-output.csv && cp output/site_check_summary.md examples/site-check/expected-summary.md"
+    "examples:update": "npm run inquiry:sample && npm run site-check:sample && cp output/inquiry_result.csv examples/inquiry/expected-output.csv && cp output/site_check_report.csv examples/site-check/expected-output.csv && cp output/site_check_summary.md examples/site-check/expected-summary.md && cp output/inquiry_summary.md examples/inquiry/expected-summary.md"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",

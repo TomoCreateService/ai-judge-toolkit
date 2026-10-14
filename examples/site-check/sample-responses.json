@@ -4,81 +4,89 @@
       {
         "page_url": "http://localhost:4173/index.html",
         "check_type": "お知らせの更新が古い",
-        "detail": "お知らせの最新は「2023.12.20 年末年始の営業について」で、チェック日から2年以上更新がない",
+        "detail": "お知らせの最新が「2023.12.20」のまま。チェック日から約2年10か月前。",
         "severity": "高",
-        "reason": "最新の日付がチェック日（2026-10-14）から1年以上前のため、重要度を上げて高とした",
+        "reason": "最新お知らせの日付がチェック日より1年以上前のため、重要度を上げた。",
         "confidence": "高"
       },
       {
         "page_url": "http://localhost:4173/news.html",
         "check_type": "お知らせの更新が古い",
-        "detail": "「最終更新日：2023年12月20日」のままで、チェック日から2年以上更新されていない",
+        "detail": "「最終更新日：2023年12月20日」のまま。チェック日から約2年10か月更新がない。",
         "severity": "高",
-        "reason": "最終更新日がチェック日から1年以上前のため、重要度を上げて高とした",
+        "reason": "最終更新日がチェック日より1年以上前のため、重要度を上げた。",
         "confidence": "高"
-      },
-      {
-        "page_url": "http://localhost:4173/index.html",
-        "check_type": "終了済みの告知",
-        "detail": "「年末年始の営業について」が掲載されたままになっている",
-        "severity": "中",
-        "reason": "告知の期間が2023年12月30日〜2024年1月3日で、チェック日より前に終わっている",
-        "confidence": "高"
-      },
-      {
-        "page_url": "http://localhost:4173/news.html",
-        "check_type": "終了済みの告知",
-        "detail": "「2023年12月30日（土）〜2024年1月3日（水）はお休み」の告知が残っている",
-        "severity": "中",
-        "reason": "告知の期間がチェック日より前に終わっているのに掲載されたままのため",
-        "confidence": "高"
-      },
-      {
-        "page_url": "http://localhost:4173/news.html",
-        "check_type": "終了済みの告知",
-        "detail": "「2022.07.15 夏のスタンプキャンペーン」が掲載されたままになっている",
-        "severity": "中",
-        "reason": "夏のキャンペーンで2022年の投稿。期間の記載がなく、終了の確認はできない",
-        "confidence": "低"
       },
       {
         "page_url": "http://localhost:4173/index.html",
         "check_type": "古い年号表記",
-        "detail": "フッターの「© 2021 Sample Bakery」が古いまま",
+        "detail": "フッターの「© 2021 スコーン工房 サンプル」の年が古いまま。",
         "severity": "低",
-        "reason": "コピーライトの年がチェック日の年（2026年）より前のままのため",
+        "reason": "チェック日の年（2026年）より前の年号が表記として残っているため。",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/menu.html",
+        "check_type": "古い年号表記",
+        "detail": "フッターの「© 2021 スコーン工房 サンプル」の年が古いまま。",
+        "severity": "低",
+        "reason": "チェック日の年（2026年）より前の年号が表記として残っているため。",
         "confidence": "高"
       },
       {
         "page_url": "http://localhost:4173/news.html",
         "check_type": "古い年号表記",
-        "detail": "フッターの「© 2021 Sample Bakery」が古いまま",
+        "detail": "フッターの「© 2021 スコーン工房 サンプル」の年が古いまま。",
         "severity": "低",
-        "reason": "コピーライトの年がチェック日の年（2026年）より前のままのため",
+        "reason": "チェック日の年（2026年）より前の年号が表記として残っているため。",
         "confidence": "高"
       },
       {
-        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/access.html",
-        "check_type": "ページ間の情報不一致",
-        "detail": "営業時間：トップは「9:00〜18:00」、店舗情報は「10:00〜18:00」",
-        "severity": "高",
-        "reason": "同じ営業時間の情報が両ページで食い違っており、来店時に困るため",
+        "page_url": "http://localhost:4173/index.html",
+        "check_type": "終了済みの告知",
+        "detail": "お知らせに「年末年始の営業についてお知らせ」（2023.12.20）が残っている。",
+        "severity": "中",
+        "reason": "年末年始の告知期間はチェック日より前に終わっているため。",
         "confidence": "高"
       },
       {
-        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/access.html",
-        "check_type": "ページ間の情報不一致",
-        "detail": "定休日：トップは「火曜日」、店舗情報は「火曜日・第3水曜日」",
-        "severity": "高",
-        "reason": "定休日の情報が両ページで食い違っており、来店時に困るため",
+        "page_url": "http://localhost:4173/news.html",
+        "check_type": "終了済みの告知",
+        "detail": "「2023年12月30日〜2024年1月3日は休業いたします。」の告知が残っている。",
+        "severity": "中",
+        "reason": "休業期間はチェック日より前に終わっているため。",
         "confidence": "高"
       },
       {
-        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/access.html",
+        "page_url": "http://localhost:4173/news.html",
+        "check_type": "終了済みの告知",
+        "detail": "「夏のスタンプキャンペーン」（2022年7月15日〜8月31日）が残っている。",
+        "severity": "中",
+        "reason": "キャンペーン期間はチェック日より前に終了しているため。",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/news.html",
         "check_type": "ページ間の情報不一致",
-        "detail": "電話番号：トップは「03-1234-5678」、店舗情報は「03-1234-5687」",
+        "detail": "電話番号：トップは「000-0000-0002」、お知らせ・店舗情報は「000-0000-0020」。",
         "severity": "高",
-        "reason": "電話番号の数字が両ページで食い違っており、連絡できなくなるため",
+        "reason": "同じ店舗の電話番号が2ページで異なり、来店・連絡時に困るため。",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/news.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "営業時間：トップは「9:00〜18:00」、お知らせ・店舗情報は「10:00〜18:00」。",
+        "severity": "高",
+        "reason": "同じ店舗の営業時間が2ページで異なり、来店時に困るため。",
+        "confidence": "高"
+      },
+      {
+        "page_url": "http://localhost:4173/index.html ↔ http://localhost:4173/news.html",
+        "check_type": "ページ間の情報不一致",
+        "detail": "定休日：トップは「火曜日」、お知らせ・店舗情報は「火曜日・第3水曜日」。",
+        "severity": "高",
+        "reason": "同じ店舗の定休日が2ページで異なり、来店時に困るため。",
         "confidence": "高"
       }
     ]
