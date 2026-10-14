@@ -402,6 +402,7 @@ footer {
   position: relative;
 }
 #l-singlemenu .l-singlemenu__main-container-3box-box-img {
+  display: block;
   background: rgb(255, 255, 255);
   border-radius: calc(6.94444vw) calc(6.94444vw) calc(0.138889vw)
     calc(0.138889vw);
@@ -1100,8 +1101,8 @@ img {
 }
 .p-gallery img {
   display: block;
-  width: 480px;
-  height: 220px;
+  width: 100%;
+  height: auto;
   background: rgb(248, 236, 215);
   border: 1px solid rgb(220, 197, 165);
 }
@@ -1200,10 +1201,6 @@ img {
   }
   .p-shop p {
     overflow-wrap: anywhere;
-  }
-  .p-gallery img {
-    width: 100%;
-    height: 180px;
   }
   .p-page-title {
     padding: 48px 20px;
