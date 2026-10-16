@@ -1,0 +1,152 @@
+[
+  {
+    "id": "inq-001",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-002",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-003",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-004",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-005",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-006",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-007",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-008",
+    "category": "見積り・相談（要返信）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-009",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-010",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-011",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-012",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-013",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-014",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-015",
+    "category": "既存のお客様からの連絡（要対応）",
+    "needsReview": false
+  },
+  {
+    "id": "inq-016",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-017",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-018",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-019",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-020",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-021",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-022",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-023",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-024",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-025",
+    "category": "営業メール",
+    "needsReview": false
+  },
+  {
+    "id": "inq-026",
+    "category": "その他",
+    "needsReview": true
+  },
+  {
+    "id": "inq-027",
+    "category": "その他",
+    "needsReview": false
+  },
+  {
+    "id": "inq-028",
+    "category": "その他",
+    "needsReview": false
+  },
+  {
+    "id": "inq-029",
+    "category": "その他",
+    "needsReview": false
+  },
+  {
+    "id": "inq-030",
+    "category": "その他",
+    "needsReview": false
+  }
+]
